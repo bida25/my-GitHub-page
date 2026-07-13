@@ -1,91 +1,230 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html lang="en"> 
+<title>Contact | Lebo's Brew Haven Coffee</title>
 
-<head> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 
-    <meta charset="UTF-8"> 
+<style>
+.contact-hero{
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("images/contact-bg.jpg");
+    background-size:cover;
+    background-position:center;
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+.info-card{
+    border:none;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
 
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="styles.css">  
-    <!-- Bootstrap CSS --> 
+.contact-form{
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+.visit-image{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
 
-</head> 
+.social a{
+    text-decoration:none;
+    margin:10px;
+}
 
-<body> 
+footer{
+    margin-top:60px;
+}
+</style>
 
-  <header> 
+</head>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+<body>
 
-        <div class="container"> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
 
-            <a class="navbar-brand" href="index.html">My Website</a> 
+<a class="navbar-brand fw-bold" href="index.html">
+☕ Lebo's Brew Haven
+</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+<div class="navbar-nav ms-auto">
 
-                <span class="navbar-toggler-icon"></span> 
+<a class="nav-link" href="index.html">Home</a>
 
-            </button> 
+<a class="nav-link" href="about.html">About</a>
 
-            <div class="collapse navbar-collapse" id="navbarNav"> 
+<a class="nav-link" href="menu.html">Menu</a>
 
-                <ul class="navbar-nav"> 
+<a class="nav-link active" href="contact.html">Contact</a>
 
-                    <li class="nav-item"> 
+</div>
 
-                        <a class="nav-link" href="index.html">Home</a> 
+</div>
+</nav>
 
-                    </li> 
+<header class="contact-hero">
 
-                    <li class="nav-item"> 
+<div class="text-center text-white">
 
-                        <a class="nav-link" href="about.html">About</a> 
+<h1 class="display-3 fw-bold">
+Contact Us
+</h1>
 
-                    </li> 
+<p class="lead">
+We'd love to hear from you. Come enjoy your next cup with us.
+</p>
 
-                    <li class="nav-item"> 
+</div>
 
-                        <a class="nav-link" href="contact.html">Contact</a> 
+</header>
 
-                    </li> 
+<div class="container my-5">
 
-                </ul> 
+<div class="row g-5">
 
-            </div> 
+<div class="col-lg-5">
 
-        </div> 
+<div class="card info-card p-4">
 
-    </nav> 
-   
-    </header> 
+<h2>Visit Our Coffee Shop</h2>
 
-      
-    <main class="container my-5"> 
+<hr>
 
-    <h2>Contact Me</h2> 
+<p>📍 Plot 123, Main Mall, Gaborone</p>
 
-    <p>If you'd like to get in touch, feel free to email me at <a href="mailto:example@example.com" class="btn btn-success">example@example.com</a>.</p> 
+<p>📞 +267 71 234 567</p>
 
-    </main> 
+<p>✉ info@lebosbrew.com</p>
 
- 
+<p>🕒 Monday - Friday : 7AM - 8PM</p>
 
-    <footer> 
+<p>🕒 Saturday : 8AM - 6PM</p>
 
-        <p>&copy; 2025 Your Name</p> 
+<p>🕒 Sunday : 9AM - 4PM</p>
 
-    </footer> 
-    <!-- Bootstrap JS and dependencies --> 
+<div class="social mt-4">
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
+<h5>Follow Us</h5>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
+<a class="btn btn-outline-dark">Facebook</a>
 
-</body> 
+<a class="btn btn-outline-dark">Instagram</a>
 
+<a class="btn btn-outline-dark">WhatsApp</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-7">
+
+<div class="card contact-form p-4">
+
+<h2 class="mb-4">Send Us a Message</h2>
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Full Name">
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="email" class="form-control" placeholder="Email">
+</div>
+
+</div>
+
+<div class="mb-3">
+<input type="text" class="form-control" placeholder="Subject">
+</div>
+
+<div class="mb-3">
+<textarea class="form-control" rows="6" placeholder="Write your message here..."></textarea>
+</div>
+
+<button class="btn btn-warning btn-lg w-100">
+☕ Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<section class="container my-5">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<img src="images/coffee-shop.jpg" class="visit-image">
+
+</div>
+
+<div class="col-lg-6">
+
+<h2>Come Experience the Perfect Cup</h2>
+
+<p class="lead">
+At Lebo's Brew Haven Coffee we don't just serve coffee—we create memorable moments.
+Whether you're meeting friends, working remotely, or simply relaxing with your favorite drink, you'll always find a warm welcome here.
+</p>
+
+<a href="menu.html" class="btn btn-dark btn-lg">
+View Our Menu
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container my-5">
+
+<h2 class="text-center mb-4">
+Find Us
+</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Gaborone,Botswana&output=embed"
+width="100%"
+height="350"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+</section>
+
+<footer class="bg-dark text-white text-center p-4">
+
+<p class="mb-0">
+© 2026 Lebo's Brew Haven Coffee Shop
+</p>
+
+</footer>
+
+</body>
 </html>
